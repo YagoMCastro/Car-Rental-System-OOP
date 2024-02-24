@@ -1,4 +1,6 @@
-from Cars import Cars
+from Car import Car
+import pandas as pd
+
 
 class User_Interface():
     @staticmethod
@@ -11,12 +13,19 @@ class User_Interface():
         print('->Enter 2 to rent a Car')
         print('->Enter 3 to exit\n')
 
+    @staticmethod
+    def print_available_cars():
+        file = pd.read_csv('Datasets/CarRentalDataV1.csv')
+        make = file["vehicle.make"]
+        model = file["vehicle.model"]
+        print(file.columns)
+        file['vehicle.make_model'] = make + ' ' + model
+        print(sorted(file['vehicle.make_model'].unique()))
+
     def main_menu():
         User_Interface.print_main_menu_options()
         user_choice = int(input())
 
         if user_choice == 1:
-            print(sorted(Cars.available_cars))
-            print('\nDone!')
-            print()
+            User_Interface.print_available_cars()
             User_Interface.main_menu()
