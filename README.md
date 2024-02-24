@@ -19,7 +19,7 @@ To run the program:
 - Clone this repository to your local machine;
 - Install the required dependencies;
 - Ensure you have Python installed;
-- Navigate to the project directory in your terminal.
+- Navigate to the project directory in your terminal;
 - Run the run.py using Python.
 
 ## Contribution
@@ -27,7 +27,7 @@ Contributions are welcome! If you have any suggestions, improvements, or feature
 
 ## Credits
 - Cornell Car Rental Dataset by Kushlesh Kumar;
-- This project was created by [YagoMCastro] (https://github.com/YagoMCastro). 
+- This project was created by [YagoMCastro](https://github.com/YagoMCastro). 
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
